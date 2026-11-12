@@ -1,0 +1,20 @@
+# Demo cutscene for res://tests/demo/demo.tscn
+# Enter / Space / click: advance text.  Hold Esc: skip.  R (after): replay.
+
+fade out 0
+fade in 1.2
+say narrator "A quiet morning in the village."
+
+move hero to well speed=walk
+face mira hero
+say mira "You came back." emotion=sad
+face hero mira
+say hero "I said I would. Didn't I?"
+say mira "People say a lot of things."
+
+wait 0.4
+move mira to gate speed=run
+face hero gate time=0.6
+say hero "...Mira?"
+
+fade out 1.0
